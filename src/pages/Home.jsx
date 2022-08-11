@@ -6,10 +6,13 @@ import { apiGet } from '../misc/config';
 
 function Home() {
 
-const[input,setInput] =useState('');
+const[input,setInput] = useState('');
 const[results,setResults] = useState(null);
 const [searchOption,setSearchOption] = useState('shows');
 const isShowsSearch = searchOption === "shows";
+
+// useEffect allows us to hook into different component lifecycle events such as componentdid mount, componentwillmount
+// to access componentdidmount
 
 const onSearch = () =>{
   apiGet(`/search/${searchOption}?q=${input}`).then(result=>{
