@@ -1,16 +1,18 @@
 import React from 'react'
+import { DetailsWrapper } from './Detailes.styled';
+
 
 function Details({ status, premiered, network }) {
     
         return (
-          <div>
+          <DetailsWrapper>
             <p>
               Status: <span>{status}</span>
             </p>
             <p>
               Premiered {premiered} {network ? `on ${network.name}` : null}
             </p>
-          </div>
+          </DetailsWrapper>
         );
       };
       
