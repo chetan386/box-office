@@ -5,6 +5,7 @@ export const FlexGrid = styled.div`
  justify-content: center;
  flex-wrap:wrap;
 `
+
 export const SearchCard = styled.div`
 width: 300px;
 height: 100%;
